@@ -1,0 +1,36 @@
+{
+  "name": "hospital_management",
+  "version": "1.0.0",
+  "description": "Sepm project sem 4",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "scss": "node-sass ",
+    "watch:scss": "onchange --npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts* dist/fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksh-sood/hospital-management.git"
+  },
+  "author": "aksh sood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksh-sood/hospital-management/issues"
+  },
+  "homepage": "https://github.com/aksh-sood/hospital-management#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
